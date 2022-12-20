@@ -15,7 +15,7 @@ public class Student {
     private String registration;
 
     @OneToMany(mappedBy = "student", cascade = CascadeType.ALL)
-    private List<Paper> courses = new ArrayList<>();
+    private List<Paper> papers = new ArrayList<>();
 
     protected Student() {}
 

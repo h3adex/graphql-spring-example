@@ -1,0 +1,16 @@
+type Query {
+    students: [Student]
+}
+
+type Student {
+    id: Int!
+    firstName: String!
+    lastName: String!
+    registration: String!
+    papers: [Paper]
+}
+
+type Paper {
+    id: Int!
+    title: String!
+}

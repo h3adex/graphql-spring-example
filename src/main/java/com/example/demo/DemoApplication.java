@@ -18,8 +18,8 @@ public class DemoApplication {
 	public ApplicationRunner demo(StudentRepository studentRepository, PaperRepository courseRepository) {
 		return (args) -> {
 			studentRepository.save(new Student(1, "Mau", "Ritz", "1234"));
-			studentRepository.save(new Student(1, "An", "as", "3456"));
-			studentRepository.save(new Student(1, "Foo", "Bar", "789"));
+			studentRepository.save(new Student(2, "An", "as", "3456"));
+			studentRepository.save(new Student(3, "Foo", "Bar", "789"));
 
 			for (Student student : studentRepository.findAll()) {
 				log.info(student.toString());
