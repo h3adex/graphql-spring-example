@@ -1,6 +1,7 @@
 type Query {
     students: [Student]
-    student(id: Int): Student
+    student(id: Int!): Student
+    findStudentsByFirstName(firstName: String!): [Student]
 }
 
 type Student {

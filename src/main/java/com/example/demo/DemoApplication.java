@@ -20,6 +20,7 @@ public class DemoApplication {
 			studentRepository.save(new Student(1, "Mau", "Ritz", "1234"));
 			studentRepository.save(new Student(2, "An", "as", "3456"));
 			studentRepository.save(new Student(3, "Foo", "Bar", "789"));
+			studentRepository.save(new Student(4, "Foo", "Tar", "912"));
 
 			for (Student student : studentRepository.findAll()) {
 				log.info(student.toString());

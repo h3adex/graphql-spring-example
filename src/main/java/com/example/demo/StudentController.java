@@ -23,4 +23,9 @@ public class StudentController {
     Student student(@Argument Integer id) {
         return studentRepository.findById(id);
     }
+
+    @QueryMapping
+    Iterable<Student> findStudentsByFirstName(@Argument String firstName) {
+        return studentRepository.findByFirstName(firstName);
+    }
 }
