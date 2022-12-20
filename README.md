@@ -6,3 +6,43 @@ explored in more detail and subsequently presented to the course.
 
 # Spring Initializer
 ![Spring-Initializr](docs/spring-initializr.png)
+
+# Query examples
+```graphql
+query {
+  student(id: 1) {
+    id
+    firstName
+  }
+  students {
+    id
+    firstName
+    lastName
+    papers {
+      title
+    }
+  }
+  findStudentsByFirstName(firstName: "Foo") {
+    id
+    firstName
+    lastName
+  }
+}
+```
+
+# Mutation examples
+```graphql
+mutation {
+  createStudent(
+    student: {
+      id: 20, 
+      firstName: "A", 
+      lastName: "b", 
+      registration: "123"
+    }) {
+    id
+    firstName
+    lastName
+  }
+}
+```

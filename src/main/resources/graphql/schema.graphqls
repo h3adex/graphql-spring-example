@@ -4,6 +4,17 @@ type Query {
     findStudentsByFirstName(firstName: String!): [Student]
 }
 
+type Mutation {
+    createStudent(student: StudentInput): Student
+}
+
+input StudentInput {
+    id: Int!
+    firstName: String!
+    lastName: String!
+    registration: String!
+}
+
 type Student {
     id: Int!
     firstName: String!
