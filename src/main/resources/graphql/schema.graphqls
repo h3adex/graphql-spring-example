@@ -2,6 +2,8 @@ type Query {
     students: [Student]
     student(id: Int!): Student
     findStudentsByFirstName(firstName: String!): [Student]
+    courses: [Course]
+    course(id: Int!): Course
 }
 
 type Mutation {
@@ -21,6 +23,13 @@ type Student {
     lastName: String!
     registration: String!
     papers: [Paper]
+    courses: [Course]
+}
+
+type Course {
+    id: Int!
+    courseName: String!
+    students: [Student]
 }
 
 type Paper {

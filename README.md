@@ -7,6 +7,9 @@ explored in more detail and subsequently presented to the course.
 # Spring Initializer
 ![Spring-Initializr](docs/spring-initializr.png)
 
+# DB Relations
+![DB-Relations](docs/db_relations.png)
+
 # Query examples
 ```graphql
 query {
@@ -20,6 +23,10 @@ query {
     lastName
     papers {
       title
+    }
+    courses {
+      id
+      courseName
     }
   }
   findStudentsByFirstName(firstName: "Foo") {
