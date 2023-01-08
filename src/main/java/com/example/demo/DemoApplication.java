@@ -43,10 +43,10 @@ public class DemoApplication {
 				log.info(student.toString());
 			}
 
-			student1.getCourses().addAll(Arrays.asList(course1, course2));
+			student1.courses.addAll(Arrays.asList(course1, course2));
 			studentRepository.save(student1);
 
-			student2.getCourses().add(course3);
+			student2.courses.add(course3);
 			studentRepository.save(student2);
 
 		};

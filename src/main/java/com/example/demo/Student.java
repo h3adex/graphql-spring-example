@@ -43,8 +43,4 @@ public class Student {
         this.lastName = lastName;
         this.registration = registration;
     }
-
-    public Set<Course> getCourses() {
-        return courses;
-    }
 }
