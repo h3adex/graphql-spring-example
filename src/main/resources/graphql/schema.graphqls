@@ -2,6 +2,8 @@ type Query {
     students: [Student]
     student(id: Int!): Student
     findStudentsByFirstName(firstName: String!): [Student]
+    findStudentsByLastName(lastName: String!): [Student]
+    sortByFirstName: [Student]
     courses: [Course]
     course(id: Int!): Course
 }

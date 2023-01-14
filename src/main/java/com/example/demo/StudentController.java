@@ -30,6 +30,11 @@ public class StudentController {
         return studentRepository.findByFirstName(firstName);
     }
 
+    @QueryMapping
+    Iterable<Student> findStudentsByLastName(@Argument String lastName) {
+        return studentRepository.findByLastName(lastName);
+    }
+
     @MutationMapping
     Student createStudent(@Argument StudentInput student){
         Student student1 = new Student(
