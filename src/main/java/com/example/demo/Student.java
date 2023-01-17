@@ -11,7 +11,6 @@ import java.util.Set;
 @Table(name = "students")
 public class Student {
     @Id
-    @GeneratedValue
     private Integer id;
     private String firstName;
     private String lastName;
